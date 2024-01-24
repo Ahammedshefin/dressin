@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+* {
+    box-sizing: border-box;
+}
+.main {
+    vertical-align: middle;
+    padding-top: -50%;
+    height: 100vh;
+    width: 100%;
+    background-image: url(/images/home/0.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 5s;
+    /* slide show */
+    animation-name: slideshow;
+    animation-direction: alternate-reverse;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+@keyframes slideshow {
+    0% {
+        background-image: url(/images/home/1.jpeg);
+    }
+    20% {
+        background-image: url(/images/home/2.jpeg);
+    }
+    40% {
+        background-image: url(/images/home/3.jpeg);
+    }
+    60% {
+        background-image: url(/images/home/4.jpeg);
+    }
+    80% {
+        background-image: url(/images/home/5.jpeg);
+    }
+    100% {
+        background-image: url(/images/home/1.jpeg);
+    }
+}
+
+.texts {
+    padding-top: 20%;
+}
+.HeadingUpgradeYourStyleToday {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 54px;
+    font-weight: 700;
+    font-family: "Archivo", sans-serif;
+}
+.FindTheAmazingFashionTrendsAndAccessoriesOnDressinAtUnbeatablePrices {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    word-wrap: break-word;
+}
+#shopnow {
+    margin-left: 45%;
+    width: 10%;
+    height: 4em;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+@media (max-width: 548px) {
+    #shopnow {
+        margin-left: 30%;
+        width: 40%;
+    }
+}
+@media (min-width: 548px) and (max-width: 1233px) {
+    #shopnow {
+        margin-left: 35%;
+        width: 30%;
+    }
+}
+.about {
+    min-height: 100vh;
+    background-color: #161616;
+}
+.about-heading {
+    text-align: center;
+    padding-top: 2em;
+    font-weight: 800;
+    font-family: "Archivo Black", sans-serif;
+    color: #96521e;
+}
+.HeadingOurStory {
+    text-align: center;
+    color: #f7f7f7;
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    line-height: 30px;
+    word-wrap: break-word;
+}
+.AtDressinWeBelieveInProvidingHighQualityProductsAtAffordablePricesWeStartedAsASmallFamilyOwnedBusinessAndHaveGrownIntoALeadingRetailerInTheShoppingIndustry {
+    text-align: center;
+    color: #a4a4a4;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    line-height: 27px;
+    word-wrap: break-word;
+}
+.HeadingOurMission {
+    text-align: center;
+    color: #f7f7f7;
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    line-height: 30px;
+    word-wrap: break-word;
+}
+.OurMissionIsToMakeShoppingMoreConvenientAndEnjoyableForOurCustomersWeStriveToProvideExcellentCustomerServiceAndOfferAWideVarietyOfProductsToMeetEveryoneSNeeds {
+    text-align: center;
+    color: #a4a4a4;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    line-height: 27px;
+    word-wrap: break-word;
+}
+.HeadingOurProducts {
+    text-align: center;
+    color: #f7f7f7;
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    line-height: 30px;
+    word-wrap: break-word;
+}
+.WeOfferAWideSelectionOfProductsIncludingClothingElectronicsHomeGoodsAndMuchMoreOurProductsAreSourcedFromTopRatedManufacturersToEnsureTheHighestQuality {
+    text-align: center;
+    color: #a4a4a4;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    line-height: 27px;
+    word-wrap: break-word;
+}
+.popular {
+    min-height: 100vh;
+    background-color: #000;
+}
+/* image 1 */
+.image1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh !important;
+    height: 60vh;
+    background: url(/images/popular/1.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.image2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh !important;
+    height: 60vh;
+    background: url(/images/popular/2.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.image3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh !important;
+    height: 60vh;
+    background: url(/images/popular/3.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+@media (max-width: 768px) {
+    .image1 {
+        height: 30vh;
+    }
+    .image2 {
+        height: 30vh;
+    }
+    .image3 {
+        height: 30vh;
+    }
+}
+.HeadingProducts {
+    color: white;
+    font-size: 44.1px;
+    font-family: Archivo;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 42px;
+    word-wrap: break-word;
+}
+
+.HeadingNew {
+    color: white;
+    font-size: 44.1px;
+    font-family: Archivo;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 42px;
+    word-wrap: break-word;
+}
+.HeadingMost {
+    color: white;
+    font-size: 44.1px;
+    font-family: Archivo;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 42px;
+    word-wrap: break-word;
+}
+.HeadingPopular {
+    color: white;
+    font-size: 44.1px;
+    font-family: Archivo;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 42px;
+    word-wrap: break-word;
+}
+.HeadingBest {
+    color: white;
+    font-size: 44.1px;
+    font-family: Archivo;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 42px;
+    word-wrap: break-word;
+}
+.HeadingValue {
+    color: white;
+    font-size: 44.1px;
+    font-family: Archivo;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 42px;
+    word-wrap: break-word;
+}
+/* footer */
+.subscribe {
+    width: 100%;
+    min-height: 30vh;
+}
+.HeadingSubscribe {
+    text-align: center;
+    color: #e2e2e2;
+    font-size: 42px;
+    font-family: Archivo;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 52.5px;
+    word-wrap: break-word;
+}
+.Get10OffYourFirstPurchaseWhenYouSignUpForOurNewsletter {
+    text-align: center;
+    color: #919191;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    line-height: 27px;
+    word-wrap: break-word;
+}
+.copyright {
+    width: 100%;
+    height: 20vh;
+    background-color: #161616;
+}
+.Copyright2024DressinAllRightsReserved {
+    text-align: center;
+    color: #a9a9a9;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    word-wrap: break-word;
+}
+#subscribeemail {
+    margin: auto;
+    width: 80%;
+}
+/*  */
+.account{
+    font-family: "Archivo ", sans-serif;
+    font-weight: 400;
+}
