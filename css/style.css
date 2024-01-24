@@ -163,7 +163,7 @@
     justify-content: center;
     margin-top: 10vh !important;
     height: 60vh;
-    background: url(/images/popular/1.jpg) no-repeat;
+    background: url(../images/popular/1.jpg) no-repeat;
     background-position: center;
     background-size: cover;
 }
@@ -174,7 +174,7 @@
     justify-content: center;
     margin-top: 10vh !important;
     height: 60vh;
-    background: url(/images/popular/2.jpg) no-repeat;
+    background: url(../images/popular/2.jpg) no-repeat;
     background-position: center;
     background-size: cover;
 }
@@ -185,7 +185,7 @@
     justify-content: center;
     margin-top: 10vh !important;
     height: 60vh;
-    background: url(/images/popular/3.jpg) no-repeat;
+    background: url(../images/popular/3.jpg) no-repeat;
     background-position: center;
     background-size: cover;
 }
