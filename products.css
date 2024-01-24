@@ -20,7 +20,7 @@ body {
     padding-top: 5em;
     height: 90vh;
     width: 100%;
-    background: url(../images/products/main.jpeg) no-repeat;
+    background: url(./images/products/main.jpeg) no-repeat;
     background-color: black;
     background-position: center;
     background-size: cover;
