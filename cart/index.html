@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Shopping Cart</title>
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.css" />
+        <script src="../bootstrap/js/bootstrap.js"></script>
+
+        <link
+            rel="stylesheet"
+            href="style.css"
+            media="screen"
+            title="no title"
+            charset="utf-8"
+        />
+        <script
+            src="https://code.jquery.com/jquery-2.2.4.js"
+            charset="utf-8"
+        ></script>
+        <meta name="robots" content="noindex,follow" />
+    </head>
+    <body>
+        <!-- header -->
+
+        <!-- header -->
+        <header class="header">
+            <nav
+                class="navbar navbar-dark fixed-top"
+                style="background-color: #161616"
+            >
+                <div class="container-fluid">
+                    <a
+                        class="m-auto navbar-brand"
+                        style="
+                            font-family: 'Archivo Black', arial, sans-serif;
+                            font-weight: 400;
+                            font-size: 19px;
+                        "
+                        href="#"
+                    >
+                        Dressin</a
+                    >
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar"
+                        aria-controls="offcanvasNavbar"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div
+                        class="offcanvas offcanvas-end"
+                        style="background-color: #161616"
+                        tabindex="-1"
+                        id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel"
+                    >
+                        <div class="offcanvas-header">
+                            <a href="/">
+                                <img
+                                    src="./images/Dressin.jpeg"
+                                    style="width: 10%"
+                                    class="rounded-circle"
+                                    alt=""
+                            /></a>
+                            <button
+                                type="button"
+                                class="btn-close btn-close-white text-reset"
+                                data-bs-dismiss="offcanvas"
+                                aria-label="Close"
+                            ></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul
+                                class="navbar-nav justify-content-end flex-grow-1 pe-3"
+                            >
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link active"
+                                        aria-current="page"
+                                        href="#"
+                                        style="
+                                            font-family: 'Archivo Black', arial,
+                                                sans-serif;
+                                            font-weight: 400;
+                                        "
+                                        >Home</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link"
+                                        style="
+                                            font-family: 'Archivo Black', arial,
+                                                sans-serif;
+                                            font-weight: 400;
+                                        "
+                                        href="#"
+                                        >products</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link"
+                                        style="
+                                            font-family: 'Archivo Black', arial,
+                                                sans-serif;
+                                            font-weight: 400;
+                                        "
+                                        href="#"
+                                        >Cart
+                                        <sup>
+                                            <span
+                                                class="badge"
+                                                style="
+                                                    background-color: rgb(
+                                                        150,
+                                                        82,
+                                                        30
+                                                    );
+                                                "
+                                                >1</span
+                                            ></sup
+                                        >
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link"
+                                        style="
+                                            font-family: 'Archivo Black', arial,
+                                                sans-serif;
+                                            font-weight: 400;
+                                        "
+                                        href="#"
+                                        >Orders</a
+                                    >
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a
+                                        class="account nav-link btn btn-success text-white dropdown-toggle"
+                                        href="#"
+                                        id="dropdownId"
+                                        data-bs-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                        >Account</a
+                                    >
+                                    <div
+                                        class="dropdown-menu"
+                                        aria-labelledby="dropdownId"
+                                        style="background-color: #161616"
+                                    >
+                                        <a
+                                            class="dropdown-item text-white text-center"
+                                            href="#"
+                                            >sign up</a
+                                        >
+                                        <button
+                                            class="dropdown-item text-white text-center"
+                                        >
+                                            login
+                                        </button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!--  -->
+        <div class="container-fluid mt-5">
+            <div class="row">
+                <div class="col-12 col-xl-8">
+                    <div class="shopping-cart">
+                        <!-- Title -->
+                        <div class="title">Shopping Bag</div>
+
+                        <!-- Product #1 -->
+                        <div class="item">
+                            <div class="buttons">
+                                <span class="delete-btn m-auto"></span>
+                            </div>
+
+                            <div class="image">
+                                <img src="item-1.png" alt="" />
+                            </div>
+
+                            <div class="description">
+                                <span>Common Projects</span>
+                                <span>Bball High</span>
+                                <span>White</span>
+                            </div>
+
+                            <div class="quantity">
+                                <button
+                                    class="plus-btn"
+                                    type="button"
+                                    name="button"
+                                >
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <input type="text" name="name" value="1" />
+                                <button
+                                    class="minus-btn"
+                                    type="button"
+                                    name="button"
+                                >
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                            </div>
+
+                            <div class="total-price">$549</div>
+                        </div>
+                        <!-- Product #1 -->
+                        <div class="item">
+                            <div class="buttons">
+                                <span class="delete-btn m-auto"></span>
+                            </div>
+
+                            <div class="image">
+                                <img src="item-1.png" alt="" />
+                            </div>
+
+                            <div class="description">
+                                <span>Common Projects</span>
+                                <span>Bball High</span>
+                                <span>White</span>
+                            </div>
+
+                            <div class="quantity">
+                                <button
+                                    class="plus-btn"
+                                    type="button"
+                                    name="button"
+                                >
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <input type="text" name="name" value="1" />
+                                <button
+                                    class="minus-btn"
+                                    type="button"
+                                    name="button"
+                                >
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                            </div>
+
+                            <div class="total-price">$549</div>
+                        </div>
+                        <!-- Product #1 -->
+                        <div class="item">
+                            <div class="buttons">
+                                <span class="delete-btn m-auto"></span>
+                            </div>
+
+                            <div class="image">
+                                <img src="item-1.png" alt="" />
+                            </div>
+
+                            <div class="description">
+                                <span>Common Projects</span>
+                                <span>Bball High</span>
+                                <span>White</span>
+                            </div>
+
+                            <div class="quantity">
+                                <button
+                                    class="plus-btn"
+                                    type="button"
+                                    name="button"
+                                >
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <input type="text" name="name" value="1" />
+                                <button
+                                    class="minus-btn"
+                                    type="button"
+                                    name="button"
+                                >
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                            </div>
+
+                            <div class="total-price">$549</div>
+                        </div>
+                        <!-- Product #1 -->
+                        <div class="item">
+                            <div class="buttons">
+                                <span class="delete-btn m-auto"></span>
+                            </div>
+
+                            <div class="image">
+                                <img src="item-1.png" alt="" />
+                            </div>
+
+                            <div class="description">
+                                <span>Common Projects</span>
+                                <span>Bball High</span>
+                                <span>White</span>
+                            </div>
+
+                            <div class="quantity">
+                                <button
+                                    class="plus-btn"
+                                    type="button"
+                                    name="button"
+                                >
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <input type="text" name="name" value="1" />
+                                <button
+                                    class="minus-btn"
+                                    type="button"
+                                    name="button"
+                                >
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                            </div>
+
+                            <div class="total-price">$549</div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-xl-4 mb-5 pb-3">
+                    <div class="wrapper">
+                        <h3 class="summary">Summary</h3>
+                        <hr class="text-center" />
+                        <div class="price-details">
+                            <span class="stotal">Sub total: $10</span>
+                            <span class="charge">Delivery charge: $1</span>
+                            <span class="total">Total: $11</span>
+                            <button class="btn mt-2 buttonorder">
+                                Place Order
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- script -->
+        <script type="text/javascript">
+            $(".minus-btn").on("click", function (e) {
+                e.preventDefault();
+                var $this = $(this);
+                var $input = $this.closest("div").find("input");
+                var value = parseInt($input.val());
+
+                if (value > 1) {
+                    value = value - 1;
+                } else {
+                    value = 0;
+                }
+
+                $input.val(value);
+            });
+
+            $(".plus-btn").on("click", function (e) {
+                e.preventDefault();
+                var $this = $(this);
+                var $input = $this.closest("div").find("input");
+                var value = parseInt($input.val());
+
+                if (value < 100) {
+                    value = value + 1;
+                } else {
+                    value = 100;
+                }
+
+                $input.val(value);
+            });
+
+            $(".like-btn").on("click", function () {
+                $(this).toggleClass("is-active");
+            });
+        </script>
+    </body>
+</html>
